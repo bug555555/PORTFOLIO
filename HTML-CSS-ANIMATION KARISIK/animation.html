@@ -1,0 +1,37 @@
+<html>
+<head>
+
+<title>Animation</title>
+<style>
+
+div{
+width:200px;
+height:200px;
+background-color:red;
+animation-name:animasyon1;
+animation-duration:10s;
+animation-iteration-count:infinite; /*sonsuz*/
+/*animation-direction:normal;*/ /*tersine veya ilerleme yeri*/
+animation-timing-function:ease-in; /*başlangıç hızları yeri*/
+position:absolute;
+animation-fill-mode:both;
+}
+
+@keyframes animasyon1{
+0% {background-color: red; left:0px; top:0px;}
+25% {background-color: green; top:50px; left:0px;}
+50% {background-color: blue; left:0px; top:200px;}
+75% {background-color: pink; right:100px; left:200px;}
+100% {background-color: yellow; bottom:50px; left:30px;}
+}
+</style>
+</head>
+<body>
+
+<div></div>
+
+
+
+
+</body>
+</html>

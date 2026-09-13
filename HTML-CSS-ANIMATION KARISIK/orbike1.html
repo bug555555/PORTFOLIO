@@ -1,0 +1,417 @@
+<html>
+<head>
+
+<title>Orbike 1</title>
+<script defer src="orbike1.js"></script>
+<style>
+
+.birbaslik{
+width: 300px;
+height: 50px;
+padding-top:10px;
+padding-left: 30px;
+padding-right: 40px;
+background-color: #785e96;
+border-radius: 0px 0px 20px 0px;
+float: center;
+display: inline-block;
+position: absolute;
+color: white;
+margin-left:250px;
+transform: translateY(-100%);
+transition: transform 0.9s ease;
+
+}
+
+.birbaslik:nth-of-type(even){
+transform: translateY(100%);
+
+
+}
+
+.birbaslik.show{
+transform: translateY(0);
+
+}
+
+.mesaj{
+width: 400px;
+height: 220px;
+position: absolute;
+display: inline-block;
+float: center;
+word-break: break-word;
+border-radius: 0px 20px 0px 20px;
+background-color: #e0b0ff;
+padding-left: 20px;
+padding-right: 10px;
+margin-top: 70px;
+margin-left: 270px;
+padding-bottom:3px;
+transform: translateY(-20%);
+transition: transform 0.9s ease-in;
+
+}
+
+.mesaj:nth-of-type(even){
+transform: translateY(20%);
+
+}
+
+.mesaj.show{
+transform: translateY(0);
+
+
+}
+
+
+.ikibaslik{
+width:400px;
+height: 40px;
+float: center;
+background-color: #1e90ff;
+border-radius: 0px 0px 20px 0px;
+display: inline-block;
+position: absolute;
+color: white;
+padding-left: 10px;
+padding-top: 20px;
+margin-top: 520px;
+margin-left:250px;
+transform: translateY(-20%);
+transition: transform 0.9s ease;
+
+}
+
+.ikibaslik:nth-of-type(even){
+transform: translateY(20%)
+
+
+}
+
+.ikibaslik.show{
+transform: translateY(0);
+
+}
+
+.ikiyazi{
+width:400px;
+height:200px;
+display: inline-block;
+position: absolute;
+float: center;
+background-color: #98bbd3;
+border-radius: 0px 20px 0px 20px;
+padding-left: 20px;
+margin-top: 610px;
+margin-left: 270px;
+word-break: break-word;
+transform: translateY(-20%);
+transition: transform 0.9s ease;
+}
+
+.ikiyazi:nth-of-type(even){
+transform: translateY(20%);
+
+
+}
+
+.ikiyazi.show{
+transform: translateY(0);
+
+}
+
+.teelefon{
+width: 10px;
+height: 10px;
+display:block;
+position: absolute;
+margin-left: 685px;
+margin-top: 260px;
+transform: translateY(-300%);
+transition: transform 0.9s ease;
+}
+
+.teelefon:nth-of-type(even){
+transform: translateY(300%);
+
+}
+
+.teelefon.show{
+transform: translateY(0);
+}
+
+.pc{
+width: 10px;
+height: 10px;
+float: center;
+display: block;
+margin-left: 730px;
+margin-top:30px;
+position:absolute;
+transform: translateY(-400%);
+transition: transform 0.9s ease;
+}
+
+.pc:nth-of-type(even){
+transform: translateY(400%);
+
+}
+
+.pc.show{
+transform: translateY(0);
+
+}
+
+.bike{
+width: 10px;
+height: 10px;
+display: block;
+position: absolute;
+margin-top: 300px;
+margin-left:260px;
+transform: translateY(-700%);
+transition: transform 0.9s ease;
+
+
+}
+
+.bike:nth-of-type(even){
+transform: translateY(700%);
+
+}
+
+.bike.show{
+transform: translateY(0);
+
+}
+
+div8{
+width: 10px;
+height: 10px;
+float: center;
+display: block;
+position: absolute;
+margin-left: 692px;
+margin-top: 790px;
+}
+
+.pciki{
+width: 10px;
+height: 10px;
+float: center;
+display: block;
+position: absolute;
+margin-left: 443px;
+margin-top: 830px;
+transform: translateY(-10%);
+transition: transform 0.9s ease;
+
+}
+
+.pciki:nth-of-type(even){
+transform: translateY(10%);
+
+}
+
+.pciki.show{
+transform: translateY(0);
+
+}
+
+
+.belge{
+width: 10px;
+height: 10px;
+float: center;
+display: block;
+position: absolute;
+margin-left: 258px;
+margin-top: 830px;
+transform: translateY(-30%);
+transition: transform 0.9s ease;
+}
+
+.belge:nth-of-type(even){
+transform: translateY(30%);
+
+}
+
+.belge.show{
+transform: translateY(0);
+
+}
+
+div11{
+width: 550px;
+height: 40px;
+display: inline-block;
+position: absolute;
+float: bottom;
+background-color: #0044d0;
+color: white;
+padding-left: 475px;
+padding-top: 20px;
+margin-top: 1040px;
+margin-left:180px;
+}
+
+div13{
+width:10px;
+height:10px;
+position:absolute;
+float:bottom;
+display:block;
+margin-top:600px;
+margin-left:750px;
+}
+
+div15{
+width:10px;
+height:10px;
+position:absolute;
+display:block;
+margin-top:760px;
+margin-left:800px;
+}
+
+div16{
+width:10px;
+height:10px;
+position:absolute;
+display:block;
+margin-top:1050px;
+margin-left:550px;
+}
+
+.cizgi{
+width:900px;
+height:3px;
+position:absolute;
+display:block;
+margin-top:510px;
+margin-left:200px;
+background-color: #1e90ff;
+
+}
+
+div18{
+word-break:break-word;
+display: inline-block;
+position:absolute;
+margin-top:650px;
+margin-left:780px;
+
+}
+
+div19{
+display:inline-block;
+position:absolute;
+margin-left:950px;
+margin-top:1000px;
+}
+
+div20{
+display:block;
+position:absolute;
+margin-left:440px;
+margin-top:240px;
+background-color:#e0b0ff;
+}
+</style>
+</head>
+<body>
+
+<div1 class="birbaslik">
+<strong>ORBIKE AKILLI BİSİKLET SİSTEMLERİ</strong>
+
+</div1>
+
+<div2  class="mesaj">
+<p>ORBIKE Akıllı Bisiklet Sistemleri Mobil uygulama ile akıllı bisikletin kiralanması ve 
+abonelik yönetimi, web uygulaması ile izleme, istatistik, ciro ve taşeron raporları yönetilir.
+Mobil uygulama coğrafi tabanlı olup harita gösterimi, en yakın istasyona yönlendirme ve rota çizme özellikleri
+ile emsalsizdir.
+ORBIKE Akıllı Bisiklet Sistemleri Mobil uygulama ile akıllı bisikletin kiralanması ve 
+abonelik yönetimi, web uygulaması ile izleme, istatistik, ciro ve taşeron raporları yönetilir.
+Mobil uygulama coğrafi tabanlı olup harita gösterimi, en yakın istasyona yönlendirme ve rota çizme özellikleri
+ile emsalsizdir.</p>
+</div2>
+<div3 class="ikibaslik">
+
+<strong>MOBİL ANKET SİSTEMİ</strong>
+
+</div3>
+
+<div4 class="ikiyazi">
+
+<p>Online Mobil Anket Sistemi Belediyenin çalışma yaptığı yerlere koyacağı karekodlu panolar ile
+mobil uygulamadan vatandaşın görüşlerini hızla alıp değerlendiren sistem.Esnek yapısı ile anketleri ve sorularınızı
+oluşturup, sınırsız sayıda anket yapabilirsiniz.Online Mobil Anket Sistemi Belediyenin çalışma yaptığı yerlere koyacağı karekodlu panolar ile
+mobil uygulamadan vatandaşın görüşlerini hızla alıp değerlendiren sistem.Esnek yapısı ile anketleri ve sorularınızı
+oluşturup, sınırsız sayıda anket yapabilirsiniz.</p>
+
+</div4>
+<div5 class="teelefon">
+
+<img src="teelefon.png" alt="tf">
+
+</div5>
+
+<div6 class="pc">
+
+<img src="pc.png" alt="pc">
+
+</div6>
+
+<div7 class="bike">
+
+<img src="bike.png" alt="bike">
+
+</div7>
+
+<div8>
+
+<img src="teelefon - Kopya.png" alt="tf1">
+
+</div8>
+
+<div9 class="pciki">
+
+<img src="pc.png" alt="pc2">
+
+</div9>
+
+<div10 class="belge">
+
+<img src="belge.png" alt="bg1">
+
+</div10>
+
+<div11>
+
+
+
+</div11>
+
+<div13>
+
+<img src="tlefon.png" alt="tf">
+
+</div13>
+
+
+<div17 class="cizgi">
+<p>          </p>
+
+</div17>
+<div18>
+
+<h4>ORDU B.R. BLD.<br> ANKET SİSTEMİ</h4>
+
+</div18>
+<div19>
+<a href="orbike2.html">Devamı -> </a>
+</div19>
+</body>
+</html>

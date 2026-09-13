@@ -1,0 +1,85 @@
+<html>
+<head><title>Hesap Makinesi</title>
+
+<style>
+
+.no{
+width:70px;
+height:50px;
+font-size:30px;
+
+}
+.is{
+width:70px;
+height:50px;
+background-color:gray;
+border-radius:3px;
+font-size:30px;
+
+}
+table{
+background-color:#003153;
+height: 350px;
+border-radius:5px;
+border-style:solid;
+
+
+}
+body{
+margin-left: 500px;
+margin-top: 100px;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+<form name="hesap">
+<table>
+
+<tr>
+
+<th colspan="4"><input style="width: 330px; height: 76px; font-size:50px; border-radius:8px; background-color:#e7d5db;" type="text" name="ekran"</th>
+
+</tr>
+<tr>
+
+<th><button class="no" type="button" onclick="document.hesap.ekran.value+='1'">1</button></th>
+<th><button class="no" type="button" onclick="document.hesap.ekran.value+='2'">2</button></th>
+<th><button class="no" type="button" onclick="document.hesap.ekran.value+='3'">3</button></th>
+<th><button class="is" type="button" onclick="document.hesap.ekran.value+='/'">/</button></th>
+
+</tr>
+<tr>
+
+<th><button class="no" type="button" onclick="document.hesap.ekran.value+='4'">4</button></th>
+<th><button class="no" type="button" onclick="document.hesap.ekran.value+='5'">5</button></th>
+<th><button class="no" type="button" onclick="document.hesap.ekran.value+='6'">6</button></th>
+<th><button class="is" type="button" onclick="document.hesap.ekran.value+='*'">*</button></th>
+
+</tr>
+<tr>
+
+<th><button class="no" type="button" onclick="document.hesap.ekran.value+='7'">7</button></th>
+<th><button class="no" type="button" onclick="document.hesap.ekran.value+='8'">8</button></th>
+<th><button class="no" type="button" onclick="document.hesap.ekran.value+='9'">9</button></th>
+<th><button class="is" type="button" onclick="document.hesap.ekran.value+='+'">+</button></th>
+
+</tr>
+<tr>
+
+<th><button class="is" type="button" onclick="document.hesap.ekran.value=''">C</button></th>
+<th><button class="no" type="button" onclick="document.hesap.ekran.value+='0'">0</button></th>
+<th><button class="is" type="button" onclick="document.hesap.ekran.value=eval(document.hesap.ekran.value)">=</button></th>
+<th><button class="is" type="button" onclick="document.hesap.ekran.value+='-'">-</button></th>
+
+</tr>
+</table>
+</form>
+</body>
+</html>
