@@ -1,2 +1,2 @@
-# PROJELERIM
+# PORTFOLIO
 Staj Esnasındaki Çalışmalarım
